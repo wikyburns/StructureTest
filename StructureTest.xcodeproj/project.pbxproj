@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		90C78BBC29ACBB0C0099CD8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C78BBB29ACBB0C0099CD8B /* AppDelegate.swift */; };
 		90C78BBE29ACBB0C0099CD8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C78BBD29ACBB0C0099CD8B /* SceneDelegate.swift */; };
-		90C78BC029ACBB0C0099CD8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C78BBF29ACBB0C0099CD8B /* ViewController.swift */; };
+		90C78BC029ACBB0C0099CD8B /* ViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C78BBF29ACBB0C0099CD8B /* ViewControllerSwift.swift */; };
 		90C78BC329ACBB0C0099CD8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C78BC129ACBB0C0099CD8B /* Main.storyboard */; };
 		90C78BC529ACBB0D0099CD8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C78BC429ACBB0D0099CD8B /* Assets.xcassets */; };
 		90C78BC829ACBB0D0099CD8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C78BC629ACBB0D0099CD8B /* LaunchScreen.storyboard */; };
+		90C78C4A29ACFB640099CD8B /* ScannerFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C78C4929ACFB640099CD8B /* ScannerFramework.framework */; };
+		90C78C4B29ACFB640099CD8B /* ScannerFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90C78C4929ACFB640099CD8B /* ScannerFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90C78BEF29ACC9D50099CD8B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				90C78C4B29ACFB640099CD8B /* ScannerFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		90C78BB829ACBB0C0099CD8B /* StructureTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StructureTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C78BBB29ACBB0C0099CD8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90C78BBD29ACBB0C0099CD8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		90C78BBF29ACBB0C0099CD8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90C78BBF29ACBB0C0099CD8B /* ViewControllerSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSwift.swift; sourceTree = "<group>"; };
 		90C78BC229ACBB0C0099CD8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90C78BC429ACBB0D0099CD8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90C78BC729ACBB0D0099CD8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90C78BC929ACBB0D0099CD8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90C78BF429ACD6010099CD8B /* HeaderSwiftTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderSwiftTest.h; sourceTree = "<group>"; };
+		90C78C4929ACFB640099CD8B /* ScannerFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ScannerFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C78C4A29ACFB640099CD8B /* ScannerFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +59,10 @@
 		90C78BAF29ACBB0C0099CD8B = {
 			isa = PBXGroup;
 			children = (
+				90C78BF429ACD6010099CD8B /* HeaderSwiftTest.h */,
 				90C78BBA29ACBB0C0099CD8B /* StructureTest */,
 				90C78BB929ACBB0C0099CD8B /* Products */,
+				90C78BEB29ACC9D50099CD8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +79,21 @@
 			children = (
 				90C78BBB29ACBB0C0099CD8B /* AppDelegate.swift */,
 				90C78BBD29ACBB0C0099CD8B /* SceneDelegate.swift */,
-				90C78BBF29ACBB0C0099CD8B /* ViewController.swift */,
+				90C78BBF29ACBB0C0099CD8B /* ViewControllerSwift.swift */,
 				90C78BC129ACBB0C0099CD8B /* Main.storyboard */,
 				90C78BC429ACBB0D0099CD8B /* Assets.xcassets */,
 				90C78BC629ACBB0D0099CD8B /* LaunchScreen.storyboard */,
 				90C78BC929ACBB0D0099CD8B /* Info.plist */,
 			);
 			path = StructureTest;
+			sourceTree = "<group>";
+		};
+		90C78BEB29ACC9D50099CD8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90C78C4929ACFB640099CD8B /* ScannerFramework.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +106,7 @@
 				90C78BB429ACBB0C0099CD8B /* Sources */,
 				90C78BB529ACBB0C0099CD8B /* Frameworks */,
 				90C78BB629ACBB0C0099CD8B /* Resources */,
+				90C78BEF29ACC9D50099CD8B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90C78BC029ACBB0C0099CD8B /* ViewController.swift in Sources */,
+				90C78BC029ACBB0C0099CD8B /* ViewControllerSwift.swift in Sources */,
 				90C78BBC29ACBB0C0099CD8B /* AppDelegate.swift in Sources */,
 				90C78BBE29ACBB0C0099CD8B /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VUDMJM6Q2A;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_ROOT)/HeaderSwiftTest.h";
 				INFOPLIST_FILE = StructureTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -317,6 +348,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VUDMJM6Q2A;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_ROOT)/HeaderSwiftTest.h";
 				INFOPLIST_FILE = StructureTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
